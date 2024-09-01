@@ -38,15 +38,6 @@ My changes
 
 /* */
 
-@media (max-width: 768px) {
-    .flex-container {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-    }
-
-    .flex-item {
-        margin-bottom: 20px;
-    }
-}	
 
 
 #intro {
@@ -3693,7 +3684,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		color: #ffffff;
+		color: transparent;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
