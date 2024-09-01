@@ -3855,9 +3855,7 @@ input, select, textarea {
 		text-decoration: none; /* Optional: Remove underline from the link */
 	}
 
-	#main > .strong {
-		color: white !important;
-	}
+
 
 	#main > .posts > article h2 {
 		color: white !important;
