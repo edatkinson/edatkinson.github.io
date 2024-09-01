@@ -1,21 +1,24 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Image Processing AI - Ed Atkinson's Portfolio</title>
+    <title>Detecting Prohibited Items in Airport X-rays - Ed Atkinson's Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
         body {
-            color: white; /* Assuming the general text color should be white */
+            color: white; /* General text color should be white */
+        }
+        a, h2 {
+            color: white; /* Links and headers should be white */
         }
         strong {
             font-weight: bold;
             color: white;
         }
         ul {
-            padding-left: 40px; /* Increased padding to ensure bullets are aligned left */
+            padding-left: 40px; /* Ensure bullets are aligned left */
             margin-left: 0;
             list-style-position: outside; /* Bullets outside the block of text */
             text-align: left; /* Ensure text aligns left */
@@ -37,6 +40,7 @@
             <a href="index.html" class="logo">Ed</a>
         </header>
 
+        <!-- Nav -->
         <nav id="nav">
             <ul class="links">
                 <li><a href="index.html">Home</a></li>
@@ -57,18 +61,24 @@
                     <h1>Detecting Prohibited Items in Airport X-rays</h1>
                 </header>
                 
-                <span class="image main"><img src="images/NNArchitectureMulticlass.png" alt="Image Processing AI" /></span>
+                <!-- Image placeholder -->
+                <!-- <span class="image main"><img src="images/xray_project.png" alt="Detecting Prohibited Items in Airport X-rays" /></span> -->
                 
-                <p>This project involved the development of an advanced image processing AI to detect prohibited items in Airport X-ray machines. The AI system leverages sophisticated machine learning techniques, including:</p>
+                <p>This group project focused on developing two Convolutional Neural Network (CNN) classifiers to evaluate the safety of bags passing through X-rays during airport security screening. The primary objectives included building a binary classifier that determines whether a bag is 'safe' or 'not safe' and a multi-class classifier that categorizes unsafe items into specific types, such as 'gun,' 'hammer,' 'knife,' or 'scissors.'</p>
+                
                 <ul>
-                    <li><strong>Multi-Class and Binary Convolutional Neural Networks (CNNs):</strong> Used for high-accuracy image classification.</li>
-                    <li><strong>Data Augmentation:</strong> Enhanced the training dataset with various transformations to improve model generalization.</li>
-                    <li><strong>Customized Loss Functions:</strong> Tailored the loss functions to better address the unique challenges of detecting prohibited items.</li>
-                    <li><strong>Stratified Sampling:</strong> Ensured balanced representation of all classes during training.</li>
-                    <li><strong>Performance Analysis:</strong> Employed rigorous evaluation metrics to optimize model performance.</li>
+                    <li><strong>Binary and Multi-Class Classification:</strong> Developed a binary classifier that achieved near-perfect accuracy (99.7%) in distinguishing safe from unsafe items. The multi-class classifier, however, struggled with categorizing specific prohibited items.</li>
+                    <li><strong>Data Handling:</strong> The data was preprocessed to address class imbalance using stratified sampling and a custom weighted loss function. All images were resized and normalized for uniform input.</li>
+                    <li><strong>Custom Loss Function:</strong> Implemented a custom loss function to penalize false-negative predictions more heavily, which is crucial for minimizing security risks.</li>
+                    <li><strong>Model Architecture:</strong> Both models featured three convolutional layers with batch normalization, max pooling, and fully connected layers, optimized using SGD, Adam, and RMSprop optimizers.</li>
+                    <li><strong>Performance Measures:</strong> Evaluated model performance using precision, recall, and the F2-score, emphasizing the importance of minimizing type-II errors (false negatives).</li>
                 </ul>
                 
-                <p>The outcome was a highly effective image processing AI that significantly improved the accuracy and reliability of prohibited item detection in X-ray images, contributing to enhanced airport security operations.</p>
+                <p>The project demonstrated that while the binary classifier was highly reliable, the multi-class classifier required further improvements to accurately categorize prohibited items. Future work could explore expanded hyperparameter searches, data augmentation techniques, and the development of a more robust and generalizable model.</p>
+
+                <p>For more details, you can access the full report and code on GitHub:</p>
+                <a href="https://github.com/edatkinson/Prohibited-Item-Detection" target="_blank" class="button">View My Airport X-ray Classification Project on GitHub</a>
+                <a href="documents/Intro_to_AI_Coursework_NEW.pdf" target="_blank" class="button">Download My Airport X-ray Classification Report (PDF)</a>
             </section>
         </div>
 

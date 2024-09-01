@@ -1,21 +1,24 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Aviva Insurance Optimisation Project - Ed Atkinson's Portfolio</title>
+    <title>Optimising Aviva’s Garage Network - Ed Atkinson's Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <style>
         body {
-            color: white; /* Assuming the general text color should be white */
+            color: white; /* General text color should be white */
+        }
+        a, h2 {
+            color: white; /* Links and headers should be white */
         }
         strong {
             font-weight: bold;
             color: white;
         }
         ul {
-            padding-left: 40px; /* Increased padding to ensure bullets are aligned left */
+            padding-left: 40px; /* Ensure bullets are aligned left */
             margin-left: 0;
             list-style-position: outside; /* Bullets outside the block of text */
             text-align: left; /* Ensure text aligns left */
@@ -37,6 +40,7 @@
             <a href="index.html" class="logo">Ed</a>
         </header>
 
+        <!-- Nav -->
         <nav id="nav">
             <ul class="links">
                 <li><a href="index.html">Home</a></li>
@@ -48,26 +52,29 @@
                 <li><a href="https://github.com/edatkinson" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
                 <li><a href="https://www.linkedin.com/in/edward-atkinson-b24101291/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
             </ul>
-
         </nav>
 
         <!-- Main -->
         <div id="main">
             <section>
                 <header class="main">
-                    <h1>Aviva Insurance Optimisation Project</h1>
+                    <h1>Optimising Aviva’s Garage Network</h1>
                 </header>
                 
-                <span class="image main"><img src="images/kmeans_histo.png" alt="Aviva Insurance Project" /></span>
+                <p>This group project focused on optimising the placement of Aviva’s repair garages to reduce tow truck drive times, enhance sustainability, and ensure efficient emergency assistance. The project involved the use of data-driven approaches and mathematical modeling to address the challenge of strategically positioning repair garages across the UK.</p>
                 
-                <p>This project focused on optimizing repair garage locations for Aviva Insurance to minimize the time for vehicle recoveries. The solution involved using various data-driven techniques, including:</p>
                 <ul>
-                    <li>K-means clustering: To group data points based on geographical and logistical factors.</li>
-                    <li>Dijkstra’s Algorithm: To calculate the shortest paths for vehicle recoveries.</li>
-                    <li>Louvain’s Method: For community detection, helping to identify clusters of high-demand areas.</li>
+                    <li><strong>Garage Location Optimisation Using K-Means Clustering:</strong> We used a weighted K-Means clustering algorithm to optimise the placement of garages based on collision data. This method helped to reduce the average distance between collisions and the nearest garage.</li>
+                    <li><strong>Community Detection:</strong> Utilised the Louvain community detection method to identify clusters within the network and reposition garages to efficiently manage repair demands across these communities.</li>
+                    <li><strong>Distance Metrics:</strong> Employed Dijkstra’s Algorithm to calculate the shortest paths from garages to collision sites, allowing us to assess the impact of our optimisation strategies on response times.</li>
+                    <li><strong>Statistical Analysis:</strong> Conducted comparative analysis between the initial and optimised networks, showing that the K-Means method significantly reduced mean distances and variance in drive times, making it the superior optimisation technique.</li>
                 </ul>
                 
-                <p>The result was a significant reduction in average recovery time, leading to improved customer satisfaction and operational efficiency for Aviva.</p>
+                <p>This project demonstrated that optimising the location of garages can lead to improved operational efficiency and sustainability for Aviva. The reduction in drive times not only enhances customer satisfaction but also contributes to lowering CO2 emissions.</p>
+
+                <p>For more details, you can access the full report and code on GitHub:</p>
+                <a href="https://github.com/npatel1911/MDM3-Group-7a" target="_blank" class="button">View our Garage Network Optimisation Project on GitHub</a>
+                <a href="documents/MDM3_Group_7a.pdf" target="_blank" class="button">Download our Garage Network Optimisation Report (PDF)</a>
             </section>
         </div>
 
